@@ -32,8 +32,12 @@ jobs:
           base64-kube-config: ${{ secrets.KUBE_CONFIG }}
           kubectl-version: v1.24.2
 
+      # Make scripts executable
+      - name: Make delete.sh executable
+        run: chmod +x ./scripts/delete.sh
+
       # 
-      # Deploys MongoDB.
+      # Delete deployment.
       #
       - name: Delete Deployments
         run: ./scripts/delete.sh
