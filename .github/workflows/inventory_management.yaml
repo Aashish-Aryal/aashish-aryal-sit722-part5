@@ -30,7 +30,7 @@ jobs:
       VERSION: ${{ github.sha }}
       REGISTRY_UN: ${{ secrets.REGISTRY_UN }}
       REGISTRY_PW: ${{ secrets.REGISTRY_PW  }}
-      NAME: book_catalog
+      NAME: inventory_management
 
     steps:
       
