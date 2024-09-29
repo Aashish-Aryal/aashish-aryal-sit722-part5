@@ -4,4 +4,4 @@ set -u # or set -o nounset
 : "$NAME"
 : "$VERSION"
 
-kubectl apply -f ./kubernetes/$NAME.yaml
+kubectl apply -f ./scripts/kubernetes/$NAME.yaml

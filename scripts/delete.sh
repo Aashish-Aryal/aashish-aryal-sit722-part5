@@ -1,2 +1,2 @@
-kubectl delete -f ./kubernetes/book_catalog.yaml
-kubectl delete -f ./kubernetes/inventory_management.yaml
+kubectl delete -f ./scripts/kubernetes/book_catalog.yaml
+kubectl delete -f ./scripts/kubernetes/inventory_management.yaml
