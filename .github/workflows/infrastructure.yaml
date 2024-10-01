@@ -26,10 +26,13 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: 'Initialize Terraform'
+        working-directory: ./scripts/terraform
         run: terraform init
 
       - name: 'Terraform Plan'
+        working-directory: ./scripts/terraform
         run: terraform plan
 
       - name: 'Terraform Apply'
+        working-directory: ./scripts/terraform
         run: terraform apply -auto-approve
